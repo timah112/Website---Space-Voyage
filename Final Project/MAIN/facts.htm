@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+      Website: 
+      Author: Atif Tirmizi
+      Date: 12-14-13
+   -->
+	<link href="CSS/sm-core-css.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/sm-clean.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+	<script src="Scripts/jquery.min.js"></script>
+	<script src="Scripts/jquery-1.11.0.min.js"></script>
+	<script src="Scripts/jquery.smartmenus.min.js"></script>
+	<script src="Scripts/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('[title]').tooltip();
+			$('#dialog').dialog({
+				resizeable: false,
+				draggable: false,
+				modal: true,
+				hide: 'blind'
+			});
+		});
+	</script>
+	<title>Facts</title>
+	
+<style type="text/css">
+body{
+	font-family: Times New Roman, Sans-serif;
+	background-image: url(facts/fImages/background-image-2.jpg);
+	
+}
+
+#main {
+				width: 910px;
+				height: auto;
+				padding: 20px;
+				float:center;
+				color: black;
+				border-left: 2px solid;
+				border-right: 2px solid;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				border: double thick black;
+				font-family: Verdana, sans-serif;
+				font-size: 1.4em;
+				}
+
+
+.img-container img {
+	display: inline-block;
+	width: 210px; 
+	height: 240px;
+	border: double thick black;
+}
+.img-continued img {
+	display: inline-block;
+	width: 210px; 
+	height: 240px;
+	border: double thick black;
+}
+
+.img-continued_2 img {
+	display: inline-block;
+	width: 220px; 
+	height: 240px;
+	float: center;
+	border: double thick black;
+}
+
+footer{
+		background-color: #202020;
+		line-height:250%;
+		display: block;
+		text-align: center;
+		width: 910px;
+		border: double thick white;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		
+	footer a{
+		color: firebrick;
+		font-weight: bold;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border-left:20px;
+		}
+		footer li {
+		list-style-type: none;
+		}
+		aside { 
+		width: 100px;
+		padding: 10px;
+		color: white;
+		float: left;
+		margin-top:15px;
+		}
+
+</style>
+</head>
+ 
+ 
+ <body>
+ 
+ <section id= "main">
+ <div id="navbar">
+	<ul class="sm sm-clean">
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="facts.htm">Facts</a></li>
+			<ul>
+				<li><a href="facts/earth.htm">Earth</a></li>
+				<li><a href="facts/jupiter.htm">Jupiter</a></li>
+				<li><a href="facts/mars.htm">Mars</a></li>
+				<li><a href="facts/mercury.htm">Mercury</a></li>
+				<li><a href="facts/neptune.htm">Neptune</a></li>
+				<li><a href="facts/pluto.htm">Pluto</a></li>
+				<li><a href="facts/saturn.htm">Saturn</a></li>
+				<li><a href="facts/uranus.htm">Uranus</a></li>
+				<li><a href="facts/venus.htm">Venus</a></li>
+			</ul>
+		<li><a href="f.a.q.htm">F.A.Q.</a></li>
+		<li><a href="contact.htm">Contact Us</a></li>
+	</ul>
+ </div>
+ 
+ <div id="dialog" title="Welcome to the facts page">
+	<p class="dialog">Click on each photo to learn more about the planet!</p>
+ </div>
+ 
+ <h2>Planets and Their Orbits</h2>
+ <p>This is a page that discusses in details all the planets of our solar system. It lists them in order from their distance from the sun. 
+Each link will discuss a brief information about the planet, its' profile and information and then several fascinating facts about each! </p>
+<h2>Planets</h2>
+ <div class='img-container'>
+<a href = "facts/mercury.htm" title = "mercury">
+<img src = "facts/fImages/mercury.jpg" alt = "Planet Mercury" height = "410" width = "450"/>
+</a>
+  
+
+
+<a href = "facts/venus.htm" title = "venus">
+<img src = "facts/fImages/venus.jpg" alt = "Planet Venus" height = "410" width = "450" class = "right"/>
+ </a>
+
+
+
+
+<a href = "facts/earth.htm" title = "earth">
+<img src = "facts/fImages/earth.jpg" alt = "Planet earth" height = "410" width = "450"/>
+
+
+
+<a href = "facts/mars.htm" title = "mars">
+<img src = "facts/fImages/mars.jpg" alt = "Planet Mars" height = "393" width = "450"/>
+</a>
+ </div>
+ 
+ 
+ 
+ <div class='img-continued'>
+ <a href = "facts/jupiter.htm" title = "Jupiter">
+ <img src = "facts/fImages/jupiter.jpg" alt = "Planet Jupiter" height = "410" width = "450"/>
+ </a>
+
+ 
+ <a href = "facts/saturn.htm" title = "Saturn">
+ <img src = "facts/fImages/saturn.jpg" alt = "Planet Saturn" height = "410" width = "450"/>
+</a>
+
+ 
+ 
+ 
+ <a href = "facts/uranus.htm" title = "Uranus">
+ <img src = "facts/fImages/uranus.jpg" alt = "Planet Uranus" height = "410" width = "450"/>
+ </a>
+ 
+ 
+ <a href = "facts/neptune.htm" title = "Neptune">
+ <img src = "facts/fImages/neptune.jpg" alt = "Planet Neptune" height = "410" width = "450"/>
+ </a>
+ </div>
+
+<div class='img-continued_2'>  
+  <a href = "facts/pluto.htm" title = "Pluto">
+  <img src = "facts/fImages/pluto.jpg" alt = "Pluto" height = "410" width = "450" class = "center"/>
+ </a>
+ </div>
+ 
+ <h2>Stars Across The Galaxy</h2>
+ <p>Our galaxy is called the Milky Way Galaxy. Galaxy is defined as 
+a system of millions or billions of stars, together with gas and dust, held together by gravitational attraction. within he milky way, there are estimated 100 thousand million stars,
+and outside that, there are millions upon millions of other galaxies also! Spiral galaxies, such as the Milky Way, consist of a flat disk with a bulging center and surrounding spiral
+arms. The galaxy's disk includes stars, planets, dust, and gas; all of which rotate around the galactic center in a regular manner.Elliptical galaxies are shaped as their name suggests. 
+They are generally round but stretch longer along one axis than along the other. They may be nearly circular or so elongated that they take on a cigar-like appearance.Most astronomers 
+suggest that galaxies formed shortly after a cosmic "big bang" that began the universe some 10 billion to 20 billion years ago. In the milliseconds following this explosion, clouds of 
+gases began to coalesce, collapse, and compress under gravity to form the building blocks of galaxies.</p>
+ 
+ <h2>The Sun and Moon we share</h2>
+
+ <h3>The Moon</h3>
+ <a href = "facts/moon.htm" title = "Moon">
+  <img src = "facts/fImages/moon.jpg" alt = "The Moon" height = "410" width = "450"/>
+  </a>
+ <p>The Moon (or Luna) is the Earth’s only natural satellite and was formed 4.6 billion years ago around some 30 to 50 million years after the formation of the solar system. 
+ The Moon is in synchronous rotation with Earth meaning the same side is always facing the Earth. The first unmanned mission to the Moon was in 1959 by the Soviet Lunar Program with the first
+ manned landing being Apollo 11 in 1969.</p>
+ <ul>
+ <li>Circumference at Equator: 10,917.0 km</li>
+ <li>Diameter: 3,475 km</li>
+ <li>Mass: 73,476,730,924,573,500 million kg (0.0123 x Earth)</li>
+ <li>Average Distance from Earth: 384,400 km</li>
+ <li>Length of Orbit: 27.3 Earth days</li>
+ <li>Surface Temperature: -233 to 123 °C</li>
+ </ul>
+ 
+ <h3>The Sun</h3>
+ <a href = "facts/sun.htm" title = "Sun">
+  <img src = "facts/fImages/sun.jpg" alt = "The Sun" height = "410" width = "450"/>
+  </a>
+ <p>The Sun or Sol, is the star at the centre of our solar system and is responsible for the Earth’s climate and weather. The Sun is an almost perfect sphere with a difference 
+ of just 10km in diameter between the poles and the equator. The average radius of the Sun is 695,508 km (109.2 x that of the Earth) of which 20–25% is the core.
+ The sun and its atmosphere consist of several zones or layers.</p>
+ <ul>
+ <li>Age: 4.6 Billion Years</li>
+ <li>Type: Yellow Dwarf (G2V)</li>
+ <li>Diameter: 1,392,684 km</li>
+ <li>Circumference at Equator: 4,370,005.6 km</li>
+ <li>Mass: 1,989,100,000,000,000,000,000 billion kg (333,060 x Earth)</li>
+ <li>Surface Temperature: 5500 °C</li>
+ </ul>
+ </section>
+ 
+ <footer>
+<ul>
+	<li><a href = "contact.htm" title = "Our History">Our History</a></li>	
+	
+	<li><a href = "contact.htm" title = "Student Login">About Me</a></li>
+	
+	<li><a "Name: Atif Tirmizi">Author: Atif Tirmizi</a></li>
+</ul>
+</footer>
+ 
+ 
+ <!--
+ sources:
+ http://www.esa.int/Our_Activities/Space_Science/Herschel/How_many_stars_are_there_in_the_Universe
+ http://science.nationalgeographic.com/science/space/universe/galaxies-article/
+ http://www.nasa.gov/mission_pages/sunearth/multimedia/Sunlayers.html
+ http://www.space.com/11162-10-surprising-moon-facts-full-moons.html
+ http://space-facts.com/the-sun/
+ -->
+ </body>
+ </html>
+ 
+ 
+ 

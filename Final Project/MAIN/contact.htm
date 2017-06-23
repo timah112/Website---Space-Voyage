@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- 
+      Website: 
+      Author: Atif Tirmizi
+      Date: 12-14-13
+    -->
+		
+	<link href="CSS/sm-core-css.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/sm-clean.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/jquery-1.11.0.min.js"></script>
+	<script src="scripts/jquery.smartmenus.min.js"></script>
+	<script src="scripts/jquery-ui.min.js"></script>
+	<script src="scripts/jquery.validate.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#contactForm').validate({
+				rules: {
+					required:true,
+					email: true
+				},
+				messages: {
+					email: {
+						required: "Please enter an e-mail address",
+						email: "Please enter a valid e-mail address"
+					}
+				}
+			});
+		});	
+		
+	</script>
+	<title>Contact Us</title>
+	
+<style type="text/css">
+
+body{
+font-family: Times New Roman, Sans-serif;
+background-image: url(images/blue-sky.jpg);
+}
+
+#main {
+				width: 910px;
+				height: 1100px;
+				padding: 20px;
+				float:center;
+				color: black;
+				border-left: 2px solid;
+				border-right: 2px solid;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				border: double thick black;
+				font-family: Verdana, sans-serif;
+				font-size: 1.4em;
+				}
+
+aside { 
+		width: 100px;
+		padding: 10px;
+		color: white;
+		float: left;
+		margin-top:15px;
+		}
+		footer{
+		background-color: #202020;
+		line-height:250%;
+		display: block;
+		text-align: center;
+		width: 910px;
+		border: double thick white;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		
+		footer a{
+		color: firebrick;
+		font-weight: bold;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border-left:20px;
+		}
+		footer li {
+		list-style-type: none;
+		}
+	
+
+</style>
+</head>
+<body>
+
+
+
+<section id= "main">
+ <div id="navbar">
+	<ul class="sm sm-clean">
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="facts.htm">Facts</a></li>
+			<ul>
+				<li><a href="facts/earth.htm">Earth</a></li>
+				<li><a href="facts/jupiter.htm">Jupiter</a></li>
+				<li><a href="facts/mars.htm">Mars</a></li>
+				<li><a href="facts/mercury.htm">Mercury</a></li>
+				<li><a href="facts/neptune.htm">Neptune</a></li>
+				<li><a href="facts/pluto.htm">Pluto</a></li>
+				<li><a href="facts/saturn.htm">Saturn</a></li>
+				<li><a href="facts/uranus.htm">Uranus</a></li>
+				<li><a href="facts/venus.htm">Venus</a></li>
+			</ul>
+		<li><a href="f.a.q.htm">F.A.Q.</a></li>
+		<li><a href="contact.htm">Contact Us</a></li>
+	</ul>
+ </div>
+  
+ <h2>Contacts Us</h2>
+ <p>Our offices are located in 2350 Broad Hollow Road. Please call at (631)-000-spce to speak 
+ with our representatives. You can also email us at atif_112@hotmail.com</p>
+ 
+ <h2>About Me</h2>
+ <p>My name is Atif Tirmizi. Im currently a student in suny Farmingdale and love it here! I'm majoring in computer programming and web development.
+ Please feel free to contact me at atif_112@hotmail.com. I am currently the owner of this website and update it often. I enjoy designign informative websites for 
+ people to learn from. Hope you enjoy and feel free to contact me for questions! Thank You!</p>
+ 
+ <form action="#" method="post" id="contactForm">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <label for="fullname">Name:
+            <input id="fullname" name="fullname" type="text" class="required"/>
+          </label><br />
+          <label for="email" class="margin">Email:
+            <input id="emailaddress" name="email" type="text" class="required" />
+          </label><br />
+          <label for="phone">Telephone:
+            <input id="phone" name="phone" type="text" class="required" />
+          </label><br />
+          <label for="subject" class="margin">Subject:
+            <input id="subject" name="subject" type="text" class="required" />
+          </label><br />
+          <label for="message">Message:<br />
+            <textarea id="message" name="message" cols="40" rows="4" class="required"></textarea>
+          </label><br />
+          <p>
+            <input id="submitform" name="submitform" type="submit" value="Submit" />
+            &nbsp;
+            <input id="resetform" name="resetform" type="reset" value="Reset" />
+          </p>
+        </fieldset>
+    </form>
+ </section>
+ 
+ 
+ 
+ 
+ <footer>
+<ul>
+	<li><a href = "contact.htm" title = "Our History">Our History</a></li>	
+	
+	<li><a href = "contact.htm" title = "Student Login">About Me</a></li>
+	
+	<li><a "Name:Atif Tirmizi">Author: Atif Tirmizi</a></li>
+</ul>
+</footer>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </body>
+</html>
+

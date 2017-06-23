@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <!-- 
+      Website: 
+      Author: Atif Tirmizi
+      Date: 12-14-13
+    -->
+	<link href="CSS/sm-core-css.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/sm-clean.css" rel="stylesheet" type="text/css"/>
+	<link href="CSS/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+	<script src="Scripts/jquery.min.js"></script>
+	<script src="Scripts/jquery-1.11.0.min.js"></script>
+	<script src="Scripts/jquery.smartmenus.min.js"></script> 
+	<script src="Scripts/jquery-ui.min.js"></script>
+	
+	
+	<title>Space Voyage</title>
+	
+	
+	<style type="text/css">
+	
+	body{
+	font-family: Times New Roman, Sans-serif;
+	background-image: url(images/blue-sky.jpg);
+	
+}
+
+#main {
+				width: 910px;
+				height: 1700px;
+				padding: 20px;
+				float:center;
+				color: black;
+				border-left: 2px solid;
+				border-right: 2px solid;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				border: double thick black;
+				font-family: Verdana, sans-serif;
+				font-size: 1.4em;
+				}
+				footer{
+		background-color: #202020;
+		line-height:250%;
+		display: block;
+		text-align: center;
+		width: 910px;
+		border: double thick white;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	footer a{
+		color: firebrick;
+		font-weight: bold;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		border-left:20px;
+		}
+		footer li {
+		list-style-type: none;
+		}
+		aside { 
+		width: 100px;
+		padding: 10px;
+		color: white;
+		float: left;
+		margin-top:15px;
+		}
+		
+		#main h1 {
+			border: solid thick #000000;
+			padding-bottom: 10px;
+			text-align: center;
+			color: white;
+			background-color: #380000;
+			}
+		
+</style>
+
+
+<script>
+$(document).ready(function() {
+	$('#accordion').accordion({
+		collapsible: true
+	});
+});
+</script>
+
+
+</head>
+ 
+ 
+ <body>
+ 
+
+ 
+ <section id= "main">
+ <h1>Space Voyage F.A.Q</h1>
+ <div id="navbar">
+	<ul class="sm sm-clean">
+		<li><a href="index.htm">Home</a></li>
+		<li><a href="facts.htm">Facts</a></li>
+			<ul>
+				<li><a href="facts/earth.htm">Earth</a></li>
+				<li><a href="facts/jupiter.htm">Jupiter</a></li>
+				<li><a href="facts/mars.htm">Mars</a></li>
+				<li><a href="facts/mercury.htm">Mercury</a></li>
+				<li><a href="facts/neptune.htm">Neptune</a></li>
+				<li><a href="facts/pluto.htm">Pluto</a></li>
+				<li><a href="facts/saturn.htm">Saturn</a></li>
+				<li><a href="facts/uranus.htm">Uranus</a></li>
+				<li><a href="facts/venus.htm">Venus</a></li>
+			</ul>
+		<li><a href="f.a.q.htm">F.A.Q.</a></li>
+		<li><a href="contact.htm">Contact Us</a></li>
+	</ul>
+ </div>
+ <div id="accordion">
+	 
+	 <h2>Q: How many Planets are in our solar system?</h2>
+	 <div>
+	 <p>A: There are 8 planets in our solar system</p>
+	 </div>
+	 
+	 <h2>Q:What is the largest planet in our solar system? </h2>
+	 <div>
+	 <p>A: Jupiter is the biggest planet in our Solar System. It is the largest by mass, volume, and surface area among other statistics.</p>
+	 </div>
+	 
+	 <h2>Q:What is the smallest planet? </h2>
+	 <div>
+	 <p>A: The smallest planet in regards to both mass and volume is Mercury, this tiny world is nearly 20 times less massive than Earth, and its diameter is about times 2.5 times smaller.</p>
+	 </div>
+	 
+	 <h2>Q: How big is the sun?</h2>
+	 <div>
+	 <p>A: The mass of our sun is 1.989E30 kg</p>
+	 </div>
+	 
+	 <h2>Q: How many years old is the earth</h2>
+	 <div>
+	 <p>A: The earth is now 4.5 billion years old. However, earth was nowhere near close to what it appears today.</p>
+	 </div>
+	 
+	 <h2>Q: How many solar systems are there?</h2>
+	 <div>
+	 <p>A: n terms of the number of solar systems present in the universe, there are something like 300 billion stars in the Milky Way, so if 10 per cent of them have planets there are around 30 billion planets in our galaxy alone, and there are over 100 billion galaxies in the observable Universe</p>
+	 </div>
+	 
+	 <h2>Q: What percent of earth is water?</h2>
+	 <div>
+	 <p>A: About 71 percent of the Earth's surface is water-covered, and the oceans hold about 96.5 percent of all Earth's water. But water also exists in the air as water vapor, in rivers and lakes, in icecaps and glaciers, in the ground as soil moisture and in aquifers, and even in you and your dog.</p>
+	 </div>
+	 
+	 <h2>Q: which is the closest planet to earth</h2>
+	 <div>
+	 <p>A: Venus would be the closest planet to Earth. However, there are times when Mars is actually the closest planet. For example, during August 2003, Earth and Mars were at such a point in their orbits that Mars was at one of its closest distances to Earth.</p>
+	 </div>
+ </div>
+ 
+ <div class="content">
+		<div class="main">
+			
+			<form>
+			  <div>
+			    <label for="dob" class="label">When would you like your question emailed to you by?</label>
+			    <input type="text" id="dob" name="birthdate">
+			  </div>
+			</form>
+		</div>
+		
+		<div id="bags">
+			    <p class="label">Number of questions you would like to ask:</p>
+			    <input type="radio" id="none" name="questions" checked="checked">
+      		<label for="none">0</label>
+			
+			<input type="radio" id="one" name="questions">
+      		<label for="one">1</label>
+ 
+      		<input type="radio" id="two" name="questions">
+      		<label for="two">2</label>
+      		<span id="questionFee"></span>
+			  </div>
+	</div>
+ </section>
+ 
+ 
+ <footer>
+<ul>
+	<li><a href = "contact.htm" title = "Our History">Our History</a></li>	
+	
+	<li><a href = "contact.htm" title = "Student Login">About Me</a></li>
+	
+	<li><a "Name: Atif Tirmizi">Author: Atif Tirmizi</a></li>
+</ul>
+</footer>
+ 
+ 
+ </body>
+ </html>
